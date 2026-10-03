@@ -36,7 +36,7 @@ It runs in any modern browser with WebGL2. Progress is saved to `localStorage`.
 ## Content
 
 - **35 champions** across 9 origins (Human, Orc, Dwarf, Night Elf, Forsaken, Troll, Tauren, Gnome, Dragonflight) and 10 classes (Warrior, Paladin, Hunter, Rogue, Priest, Mage, Warlock, Shaman, Druid, Death Knight). Each champion has a unique ability.
-- **20 monsters and 5 bosses**, from murlocs and gnolls up to the Frost Sovereign.
+- **19 monsters and 5 bosses**, from murlocs and gnolls up to the Frost Sovereign.
 - **8 item components and 36 completed items.** Every pair of components combines into a completed item.
 - **20 Boons, 8 events and 11 permanent talents.**
 - **5 themed 3D zones** with their own lighting, props and ambient particles.
