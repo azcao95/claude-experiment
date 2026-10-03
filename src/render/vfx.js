@@ -18,7 +18,11 @@ export class VFX {
   }
 
   update(dt) {
-    this.list = this.list.filter(e => {
+    // Effects may spawn new effects while updating (e.g. projectile trails),
+    // so start a fresh list for those and merge it after the pass.
+    const current = this.list;
+    this.list = [];
+    const kept = current.filter(e => {
       e.t += dt;
       const alive = e.update(dt, e.t) !== false && e.t < e.dur + (e.tail || 0);
       if (!alive) {
@@ -27,6 +31,7 @@ export class VFX {
       }
       return alive;
     });
+    this.list = kept.concat(this.list);
   }
 
   push(obj, dur, update) {

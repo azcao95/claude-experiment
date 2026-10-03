@@ -346,6 +346,7 @@ export class Arena {
 
   endCombat() {
     this.battle = null;
+    this.vfx.clear();
     this.clearViews(v => !!v.combat);
   }
 
